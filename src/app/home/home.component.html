@@ -4,10 +4,13 @@
     <form #form="ngForm" novalidate>
         <div class="form-group">
             <label>First Name</label>
-            <input type="text" class="form-control" required placeholder="Name" name="firstname" 
+            <input #firstName type="text" class="form-control" required placeholder="Name" name="firstname" 
                 [(ngModel)]="model.firstName">
         </div>
-                
+
+        <h3>Classes</h3>
+        <h4>{{firstName.className }}</h4>
+    <!--           
         <div class="form-group">
             <label>Last Name</label>
             <input type="text" class="form-control" required placeholder="Name" name="name" 
@@ -48,7 +51,7 @@
                     {{ lang }}
             </select>
         </div>
-<!--
+
         <div class="form-group">
             <label>Date Hired</label>
             <input type="Date" class="form-control">
