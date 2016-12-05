@@ -7,16 +7,19 @@ import {Employee} from '../models/employee.model';
   templateUrl: './home.component.html'
 })
 export class HomeComponent {
-  languages=["English","Spanish","Other"];
+  startDate: Date=new Date('Jan 1 2017');
+  /*
+  languages = ["English", "Spanish", "Other"];
   model = new Employee('', '', false, '', 'default');
   hasPrimaryLanguageError = false;
 
   validatePrimaryLanguage(value) {
-      
-    if(value === 'default') 
+
+    if (value === 'default')
       this.hasPrimaryLanguageError = true;
     else
-      this.hasPrimaryLanguageError = false;    
-    
+      this.hasPrimaryLanguageError = false;
+
   }
+  */
 }
