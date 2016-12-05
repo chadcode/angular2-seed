@@ -7,7 +7,9 @@ import {Employee} from '../models/employee.model';
   templateUrl: './home.component.html'
 })
 export class HomeComponent {
-  startDate: Date=new Date('Jan 1 2017');
+  startTime=new Date('1-1-2016 3:00 pm');
+  minDate=new Date('Dec 15 2016');
+  
   /*
   languages = ["English", "Spanish", "Other"];
   model = new Employee('', '', false, '', 'default');
